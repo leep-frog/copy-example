@@ -32,12 +32,12 @@ suite('Extension Test Suite', () => {
 
 		// Highlight text
 		await runCommand("cursorEndSelect");
-		await delay(3000);
 		await runCommand("editor.action.clipboardCopyAction");
+		await delay(1500);
 		await runCommand("cursorDown");
-		await delay(3000);
+		await delay(1500);
 		await runCommand("editor.action.clipboardPasteAction");
-		await delay(3000);
+		await delay(1500);
 		vscode.window.showInformationMessage(`GOODBYE`);
 		await delay(3000);
 	});
